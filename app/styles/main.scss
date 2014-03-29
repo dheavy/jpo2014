@@ -1,0 +1,118 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+@mixin font-normal() {
+    font-family: "DINPro-Regular", Arial, sans-serif;
+}
+
+@mixin font-bold() {
+    font-family: "DINAlternateBold", Arial, sans-serif;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: 'DINLightAlternateRegular';
+    src: url('../fonts/din_lightalternate-webfont.eot');
+    src: url('../fonts/din_lightalternate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_lightalternate-webfont.woff') format('woff'),
+         url('../fonts/din_lightalternate-webfont.ttf') format('truetype'),
+         url('../fonts/din_lightalternate-webfont.svg#DINLightAlternateRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINAlternateBold';
+    src: url('../fonts/din_boldalternate-webfont.eot');
+    src: url('../fonts/din_boldalternate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_boldalternate-webfont.woff') format('woff'),
+         url('../fonts/din_boldalternate-webfont.ttf') format('truetype'),
+         url('../fonts/din_boldalternate-webfont.svg#DINAlternateBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url('../fonts/din_proregular-webfont.eot');
+    src: url('../fonts/din_proregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_proregular-webfont.ttf') format('truetype'),
+         url('../fonts/din_proregular-webfont.svg#DINPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BelloProRegular';
+    src: url('../fonts/bello_pro-webfont.eot');
+    src: url('../fonts/bello_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bello_pro-webfont.woff') format('woff'),
+         url('../fonts/bello_pro-webfont.ttf') format('truetype'),
+         url('../fonts/bello_pro-webfont.svg#BelloProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #000;
+    color: #FFF;
+    font-family: "DINPro-Regular", Arial, sans-serif;
+    outline: none;
+}
+
+.header {
+    height: 365px;
+    background: url(../images/jao.jpg) center center no-repeat;
+}
+
+.modal {
+    overflow-y: hidden;
+    outline: none;
+}
+
+.timer {
+    text-align: center;
+    position: relative;
+    top: 20px;
+
+    h1 {
+        @include font-bold();
+    }
+
+    .timer-form {
+        position: relative;
+        top: 30px;
+
+        .form-group {
+            margin-right: -6px;
+        }
+
+        input {
+            border-radius: 0px;
+        }
+
+        button {
+            border-radius: 0px;
+            background-color: #9f7c31;
+            border-width: 0px;
+            color: #FFF;
+        }
+
+        .glyphicon {
+            margin-right: 10px;
+            top: 3px;
+        }
+    }
+}
+
+.avgrund-popin {
+    opacity: 0 !important;
+    background-color: #000 !important;
+}
+
+.modal-dialog {
+    text-align: center;
+}
