@@ -61,6 +61,7 @@ body {
     color: #FFF;
     font-family: "DINPro-Regular", Arial, sans-serif;
     outline: none;
+    overflow: hidden;
 }
 
 .header {
@@ -124,8 +125,6 @@ body {
     height: 310px;
     top: 55px;
     left: 40px;
-    padding-left: 40px;
-    padding-top: 20px;
     text-align: center;
     @include font-size(22);
 }
